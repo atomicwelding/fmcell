@@ -3,4 +3,9 @@
 
 
 (defclass layer ()
-  nil)
+  ((id :initarg :id
+        :initform 0
+        :accessor id)
+   (neurons :initarg :neurons
+            :initform (list)
+            :accessor neurons)))
