@@ -1,6 +1,16 @@
 (asdf:defsystem "fmcell"
   :author "weld"
-  :depends-on (:lla)
-  :components ((:file "fmcell")))
-
-
+  :depends-on (:lla :num-utils)
+  :components ((:file "fmcell")
+               (:file "utils")
+               (:file "neuron.class")
+               (:file "layer.class")
+               (:file "network.class")
+               (:file "genneuron.macro")
+               (:file "genlayer.macro")
+               (:file "output.method" )
+               (:file "cost.function")
+               (:file "identity.activation-function")
+               (:file "sigmoid.activation-function")
+               (:file "sum.method")
+               (:file "make-input-layer")))
